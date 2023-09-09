@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>les formulaires</h1>
+    <form action="Traitement.php" method="post">
+        <!--
+        Quel(s) est votre pays ? <br>
+        <select name="pays" id="">
+            <optgroup label="Europe">
+                <option value="france">france</option>
+                <option value="Belgique">Belgique</option>
+            </optgroup>
+            <optgroup label="Amerique">
+                <option value="canada">canada</option>
+            </optgroup>
+            <optgroup label="Afrique">
+                <option value="Marroc">Marroc</option>
+                <option value="Tunisie">Tunisie</option>
+                <option value="Togo">Togo</option>
+        </optgroup>
+        </select>
+         -->
+         <fieldset id="section1">
+            <legend>informations personnel</legend>
+            <label for="nom">votre nom</label>
+            <input type="text" name="nom" value="" id="nom" autocomplete="autocomplete" autofocus="autofocus" placeholder="ADIDO" required="required"><br><br>
+
+            <label for="prenom">votre prenom</label>
+            <input type="text" name="prenom" value="" id="prenom" autocomplete="autocomplete" autofocus="autofocus" placeholder="obed" required="required"><br><br>
+
+            <label for="pseudoanonyme">votre pseudoanonyme</label>
+            <input type="text" name="pseudoanonyme" value="" id="pseudoanonyme" autocomplete="autocomplete" autofocus="autofocus" placeholder="Bedotech" required="required"><br><br>
+         </fieldset>
+         <fieldset id="section2">
+            <legend>informations supplementaires</legend>
+            Quel(s) sport(s) pratiquez vous ?<br>
+            <input type="checkbox" name="sport" value="course" id="course">
+            <label for="course">course</label><br><br>
+
+            <input type="checkbox" name="sport" value="Javelot" id="Javelot">
+            <label for="Javelot">Javelot</label><br><br>
+
+            <input type="checkbox" name="sport" value="velo" id="velo">
+            <label for="velo">velo</label><br><br>
+        </fieldset>
+        
+        <input type="submit" value="Envoyer">
+        
+
+    </form>
+</body>
+</html>
